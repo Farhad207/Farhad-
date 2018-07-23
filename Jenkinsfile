@@ -1,6 +1,6 @@
 node{
    stage('SCM Checkout'){
-     git 'https://github.com/javahometech/my-app'
+     git 'https://github.com/Farhad207/Farhad-.git'
    }
    stage('Compile-Package'){
       // Get maven home path
@@ -10,7 +10,7 @@ node{
    stage('Email Notification'){
       mail bcc: '', body: '''Hi Welcome to jenkins email alerts
       Thanks
-      Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'hari.kammana@gmail.com'
+      Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'farhad207@gmail.com'
    }
    stage('Slack Notification'){
        slackSend baseUrl: 'https://hooks.slack.com/services/',
